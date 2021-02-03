@@ -21,10 +21,10 @@ http.createServer(function(request, response) {
             response.write(page);
             response.end();
         });
-    } else if (request.url === "/space.jpg" && request.method === "GET") {
-        fs.readFile('./public/Pics/space.jpg', (err, page) => {
-            response.writeHead(200,{'Content-Type':'image/jpeg'});
-            response.write(page);
+    } else if (request.url === "/Pics/space.jpg" && request.method === "GET") {
+        fs.readFile('./public/Pics/space.jpg', (err, image) => {
+            response.setHeader('Content-Type','image/jpeg');
+            response.write(image);
             response.end();
             
         });
