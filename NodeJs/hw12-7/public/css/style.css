@@ -4,11 +4,7 @@ body{
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: initial;
-}
-@font-face {
-    font-family: 'Vazir';
-    src: url('../font/Vazir-Regular.ttf');
+    background-size: cover;
 }
 .form{
     width:520px;
@@ -30,8 +26,9 @@ body{
    border: 2px solid black;
     border-radius: 5px;
     
+    
 }
-.form .input input[type="submit"]{
+.form .input input[type="button"]{
     width:390px;
     height: 45px;
     color: white;
@@ -54,25 +51,11 @@ p a{
     top:50%;
     transform:translate(-50%, -50%); 
 }
-#user,#pass1,#pass2{
+#user,#pass1{
     font-size:15px;
     right:0;
-  
     margin-top:0;
     color:red;
     visibility: hidden;
 }
 
-.inputWithIcon{
-    position: relative;
-    padding-top: 12px;
-}
-.inputWithIcon label{
-    position:absolute;
-    top: 0;
-    right: 10px;
-    margin-top:0;
-    color:red;
-    font-size:13px;
-    background-color: white;
-}
